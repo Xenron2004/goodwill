@@ -17,8 +17,9 @@ const navItems = [
 const sidebarItems = [
   { name: "Programs", path: "/programs" },
   { name: "About", path: "/about" },
-  { name: "Alumni", path: "/alumni" },
-  { name: "Magazine", path: "/magazine" },
+  { name: "Training & Placements", path: "/training" },
+  { name: "Gallery", path: "/gallery" },
+  { name: "Contact Us", path: "/contact" },
 ];
 
 const programsData = {

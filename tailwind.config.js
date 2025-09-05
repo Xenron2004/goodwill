@@ -1,17 +1,19 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
         wwwglionedualabaster: "var(--wwwglionedualabaster)",
         "wwwglionedupickled-bluewood": "var(--wwwglionedupickled-bluewood)",
-        "wwwglionedupickled-bluewood-20": "var(--wwwglionedupickled-bluewood-20)",
-        "wwwglionedupickled-bluewood-60": "var(--wwwglionedupickled-bluewood-60)",
+        "wwwglionedupickled-bluewood-20":
+          "var(--wwwglionedupickled-bluewood-20)",
+        "wwwglionedupickled-bluewood-60":
+          "var(--wwwglionedupickled-bluewood-60)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -47,9 +49,12 @@ module.exports = {
         },
       },
       fontFamily: {
-        "www-glion-edu-helvetica-neue-light": "var(--www-glion-edu-helvetica-neue-light-font-family)",
-        "www-glion-edu-semantic-link": "var(--www-glion-edu-semantic-link-font-family)",
-        "www-glion-edu-semantic-link-upper": "var(--www-glion-edu-semantic-link-upper-font-family)",
+        "www-glion-edu-helvetica-neue-light":
+          "var(--www-glion-edu-helvetica-neue-light-font-family)",
+        "www-glion-edu-semantic-link":
+          "var(--www-glion-edu-semantic-link-font-family)",
+        "www-glion-edu-semantic-link-upper":
+          "var(--www-glion-edu-semantic-link-upper-font-family)",
         sans: [
           "ui-sans-serif",
           "system-ui",
@@ -60,6 +65,17 @@ module.exports = {
           '"Noto Color Emoji"',
         ],
       },
+
+      keyframes: {
+        "scroll-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        "scroll-left": "scroll-left 30s linear infinite",
+      },
+
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -80,14 +96,14 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
     },
-    container: { 
-      center: true, 
-      padding: "2rem", 
-      screens: { 
-        "2xl": "1400px" 
-      } 
+    container: {
+      center: true,
+      padding: "2rem",
+      screens: {
+        "2xl": "1400px",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
   darkMode: ["class"],
-}
+};
