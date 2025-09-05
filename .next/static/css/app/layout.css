@@ -657,6 +657,9 @@ body{
 .mb-2{
   margin-bottom: 0.5rem;
 }
+.mb-20{
+  margin-bottom: 5rem;
+}
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -701,15 +704,6 @@ body{
 }
 .mt-\[60px\]{
   margin-top: 60px;
-}
-.mb-10{
-  margin-bottom: 2.5rem;
-}
-.mb-1{
-  margin-bottom: 0.25rem;
-}
-.mb-20{
-  margin-bottom: 5rem;
 }
 .block{
   display: block;
@@ -961,12 +955,6 @@ body{
 .max-w-xl{
   max-width: 36rem;
 }
-.max-w-4{
-  max-width: 1rem;
-}
-.max-w-6xl{
-  max-width: 72rem;
-}
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1197,10 +1185,6 @@ body{
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
-.rounded-l{
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
-}
 .border{
   border-width: 1px;
 }
@@ -1278,10 +1262,6 @@ body{
 }
 .bg-\[\#243646cc\]{
   background-color: #243646cc;
-}
-.bg-\[\#2c4a5c\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(44 74 92 / var(--tw-bg-opacity, 1));
 }
 .bg-\[\#B8956A\]{
   --tw-bg-opacity: 1;
@@ -1373,30 +1353,47 @@ body{
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
 }
-.bg-\[\#2c4a5\]{
-  background-color: #2c4a5;
-}
-.bg-\[\#2c\]{
-  background-color: #2c;
+.bg-\[\#E3AF4\]{
+  background-color: #E3AF4;
 }
 .bg-\[\#\]{
   background-color: #;
 }
-.bg-\[\#1\]{
-  background-color: #1;
-}
-.bg-\[\#1e\]{
-  background-color: #1e;
-}
-.bg-\[\#1e3\]{
+.bg-\[\#1E3A54\]{
   --tw-bg-opacity: 1;
-  background-color: rgb(17 238 51 / var(--tw-bg-opacity, 1));
+  background-color: rgb(30 58 84 / var(--tw-bg-opacity, 1));
 }
-.bg-\[\#1e3a\]{
-  background-color: #1e3a;
+.bg-\[\#E3\]{
+  background-color: #E3;
 }
-.bg-\[\#1e3a5\]{
-  background-color: #1e3a5;
+.bg-\[\#E3AF\]{
+  background-color: #E3AF;
+}
+.bg-\[\#E\]{
+  background-color: #E;
+}
+.bg-\[\#1E3A5\]{
+  background-color: #1E3A5;
+}
+.bg-\[\]{
+  background-color: ;
+}
+.bg-\[\#e\]{
+  background-color: #e;
+}
+.bg-\[\#e3\]{
+  background-color: #e3;
+}
+.bg-\[\#e3a\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 51 170 / var(--tw-bg-opacity, 1));
+}
+.bg-\[\#e3af\]{
+  background-color: #e3af;
+}
+.bg-\[\#e3af45\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 175 69 / var(--tw-bg-opacity, 1));
 }
 .bg-opacity-20{
   --tw-bg-opacity: 0.2;
@@ -1610,9 +1607,6 @@ body{
 .font-www-glion-edu-semantic-link-upper{
   font-family: var(--www-glion-edu-semantic-link-upper-font-family);
 }
-.font-\[\]{
-  font-family: ;
-}
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -1659,14 +1653,6 @@ body{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
-}
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
-}
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
 }
 .font-\[number\:var\(--www-glion-edu-helvetica-neue-light-font-weight\)\]{
   font-weight: var(--www-glion-edu-helvetica-neue-light-font-weight);
@@ -1742,45 +1728,6 @@ body{
 }
 .leading-tight{
   line-height: 1.25;
-}
-.leading-loose{
-  line-height: 2;
-}
-.leading-\[\]{
-  line-height: ;
-}
-.leading-\[7\]{
-  line-height: 7;
-}
-.leading-\[72px\]{
-  line-height: 72px;
-}
-.leading-\[px\]{
-  line-height: px;
-}
-.leading-\[1px\]{
-  line-height: 1px;
-}
-.leading-\[100px\]{
-  line-height: 100px;
-}
-.leading-\[9px\]{
-  line-height: 9px;
-}
-.leading-\[6\]{
-  line-height: 6;
-}
-.leading-\[200p\]{
-  line-height: 200p;
-}
-.leading-\[200px\]{
-  line-height: 200px;
-}
-.leading-\[56\]{
-  line-height: 56;
-}
-.leading-\[56px\]{
-  line-height: 56px;
 }
 .tracking-\[-0\.96px\]{
   letter-spacing: -0.96px;
@@ -1861,9 +1808,9 @@ body{
   --tw-text-opacity: 1;
   color: rgb(95 213 177 / var(--tw-text-opacity, 1));
 }
-.text-\[\#F5f5f5\]{
+.text-\[\#666d80\]{
   --tw-text-opacity: 1;
-  color: rgb(245 245 245 / var(--tw-text-opacity, 1));
+  color: rgb(102 109 128 / var(--tw-text-opacity, 1));
 }
 .text-\[\#d9d9dd3b\]{
   color: #d9d9dd3b;
@@ -1933,56 +1880,15 @@ body{
 .text-wwwglionedupickled-bluewood-60{
   color: var(--wwwglionedupickled-bluewood-60);
 }
-.text-\[\#F5f5f\]{
-  color: #F5f5f;
-}
-.text-\[\#F5\]{
-  color: #F5;
-}
-.text-\[\#F9\]{
-  color: #F9;
-}
-.text-\[\#F9f9\]{
-  color: #F9f9;
-}
-.text-\[\#F9f9f9\]{
-  --tw-text-opacity: 1;
-  color: rgb(249 249 249 / var(--tw-text-opacity, 1));
-}
-.text-\[\#F9f\]{
-  --tw-text-opacity: 1;
-  color: rgb(255 153 255 / var(--tw-text-opacity, 1));
-}
-.text-\[\#F2\]{
-  color: #F2;
-}
-.text-\[\#F2f\]{
-  --tw-text-opacity: 1;
-  color: rgb(255 34 255 / var(--tw-text-opacity, 1));
-}
-.text-\[\#24364\]{
-  color: #24364;
-}
-.text-\[\#243\]{
-  --tw-text-opacity: 1;
-  color: rgb(34 68 51 / var(--tw-text-opacity, 1));
+.text-\[\]{
+  color: ;
 }
 .text-\[\#\]{
   color: #;
 }
-.text-\[\#6\]{
-  color: #6;
-}
-.text-\[\#666\]{
+.text-\[\#1E3A54\]{
   --tw-text-opacity: 1;
-  color: rgb(102 102 102 / var(--tw-text-opacity, 1));
-}
-.text-\[\#666d\]{
-  color: #666d;
-}
-.text-\[\#666d80\]{
-  --tw-text-opacity: 1;
-  color: rgb(102 109 128 / var(--tw-text-opacity, 1));
+  color: rgb(30 58 84 / var(--tw-text-opacity, 1));
 }
 .underline-offset-4{
   text-underline-offset: 4px;
@@ -2331,6 +2237,10 @@ body{
 
 .hover\:bg-transparent:hover{
   background-color: transparent;
+}
+
+.hover\:font-normal:hover{
+  font-weight: 400;
 }
 
 .hover\:text-\[\#e2af44\]:hover{
@@ -3279,6 +3189,10 @@ body{
     font-size: 56px;
   }
 
+  .lg\:text-\[68px\]{
+    font-size: 68px;
+  }
+
   .lg\:text-\[74px\]{
     font-size: 74px;
   }
@@ -3296,15 +3210,6 @@ body{
   .lg\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .lg\:text-\[68px\]{
-    font-size: 68px;
-  }
-
-  .lg\:text-xl{
-    font-size: 1.25rem;
-    line-height: 1.75rem;
   }
 
   .lg\:leading-6{
@@ -3335,6 +3240,10 @@ body{
     line-height: 38px;
   }
 
+  .lg\:leading-\[48px\]{
+    line-height: 48px;
+  }
+
   .lg\:leading-\[62\.4px\]{
     line-height: 62.4px;
   }
@@ -3347,20 +3256,8 @@ body{
     line-height: 72px;
   }
 
-  .lg\:leading-\[48px\]{
-    line-height: 48px;
-  }
-
   .lg\:leading-\[76px\]{
     line-height: 76px;
-  }
-
-  .lg\:text-\[\]{
-    color: ;
-  }
-
-  .lg\:text-\[6\]{
-    color: 6;
   }
 }
 
@@ -3400,22 +3297,13 @@ body{
     font-size: 48px;
   }
 
+  .xl\:text-\[72px\]{
+    font-size: 72px;
+  }
+
   .xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .xl\:text-\[68px\]{
-    font-size: 68px;
-  }
-
-  .xl\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .xl\:text-\[72px\]{
-    font-size: 72px;
   }
 
   .xl\:leading-\[60px\]{
@@ -3424,14 +3312,6 @@ body{
 
   .xl\:leading-\[80px\]{
     line-height: 80px;
-  }
-
-  .xl\:text-\[\]{
-    color: ;
-  }
-
-  .xl\:text-\[6\]{
-    color: 6;
   }
 }
 
@@ -3442,33 +3322,12 @@ body{
     line-height: 2rem;
   }
 
-  .\32xl\:text-6xl{
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .\32xl\:text-\[68px\]{
-    font-size: 68px;
-  }
-
   .\32xl\:text-\[80px\]{
     font-size: 80px;
   }
 
   .\32xl\:leading-\[88px\]{
     line-height: 88px;
-  }
-
-  .\32xl\:text-\[\]{
-    color: ;
-  }
-
-  .\32xl\:text-\[6\]{
-    color: 6;
-  }
-
-  .\32xl\:text-\[68\]{
-    color: 68;
   }
 }
 

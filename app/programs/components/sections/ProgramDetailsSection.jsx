@@ -27,7 +27,7 @@ export const ProgramDetailsSection = () => {
       <div 
         className="flex-shrink-0 w-full lg:w-[542px] h-[400px] md:h-[600px] lg:h-[813px] bg-cover bg-center bg-no-repeat order-2 lg:order-1" 
         style={{ 
-          backgroundImage: "url('https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=542&h=813&fit=crop')" 
+          backgroundImage: "url('/assets/Fourteen.png')" 
         }} 
       />
 

@@ -29,7 +29,7 @@ const CategoryDropdown = ({ categories, selectedCategory, onCategoryChange }) =>
                   setIsOpen(false);
                 }}
                 className={`w-full text-left px-4 py-2 text-sm hover:bg-gray-50 transition-colors duration-150 ${
-                  selectedCategory === category ? 'bg-blue-50 text-blue-600 font-medium' : 'text-gray-700'
+                  selectedCategory === category ? 'bg-blue-50 text-[#1E3A54] font-medium' : 'text-gray-700'
                 }`}
                 style={{ fontFamily: 'Helvetica Neue, sans-serif' }}
               >

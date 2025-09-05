@@ -35,7 +35,7 @@ export const HeroBannerSection = () => {
       <div 
         className="relative mt-[60px] md:mt-20 lg:mt-[100px] w-full h-[400px] md:h-[600px] lg:h-[700px] bg-cover bg-center bg-no-repeat " 
         style={{ 
-          backgroundImage: "url('https://images.pexels.com/photos/1579739/pexels-photo-1579739.jpeg?auto=compress&cs=tinysrgb&w=1280&h=740&fit=crop')" 
+          backgroundImage: "url('/assets/Twenty.jpg')" 
         }} 
       />
     </>
