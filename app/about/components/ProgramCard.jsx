@@ -1,32 +1,30 @@
-
-"use client"; 
-import React, { useState } from "react";
+"use client";
 
 export const ProgramCard = ({ title, description, image, className = "" }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <div
-      className={`relative w-full h-48 sm:h-64 lg:h-80 xl:h-96 overflow-hidden rounded-lg cursor-pointer transition-all duration-500 shadow-lg hover:shadow-xl ${className}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      tabIndex={0}
+      className={`group relative w-full h-48 sm:h-64 lg:h-80 xl:h-96 overflow-hidden cursor-pointer transition-all duration-500 shadow-lg hover:shadow-xl ${className}`}
     >
-      {/* Background Image */}
+      {/* Background Image with hover zoom effect */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition-transform duration-500"
+        className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out group-hover:scale-105"
         style={{ backgroundImage: `url(${image})` }}
       />
-      
-      {/* Overlay */}
-      <div className={`absolute inset-0 bg-black transition-all duration-500 ${isHovered ? 'bg-opacity-70' : 'bg-opacity-20'}`} />
-      
-      {/* Content - Hidden by default, shown on hover */}
-      <div className={`absolute inset-0 flex flex-col justify-center items-center p-4 lg:p-6 transition-all duration-500 ${isHovered ? 'opacity-100 transform translate-y-0' : 'opacity-0 transform translate-y-8'}`}>
-        <div className="text-center">
-          <h3 className="font-playfair font-medium text-white text-lg lg:text-xl xl:text-2xl mb-3 lg:mb-4">
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/30 transition-colors duration-300 group-hover:bg-black/60" />
+
+      {/* Centered Content */}
+      <div className="absolute inset-0 flex items-center justify-center px-4 text-center">
+        <div className="max-w-md">
+          {/* Title — always visible */}
+          <h3 className="font-['Playfair_Display',Helvetica] font-semibold text-white text-lg sm:text-xl lg:text-2xl">
             {title}
           </h3>
-          <p className="font-light text-white text-sm lg:text-base leading-relaxed max-w-sm">
+
+          {/* Description — shows on hover */}
+          <p className="mt-3 text-white/90 text-sm sm:text-base leading-relaxed opacity-0 translate-y-2 transition-all font-['Helvetica-Regular',Helvetica] duration-500 group-hover:opacity-100 group-hover:translate-y-0">
             {description}
           </p>
         </div>

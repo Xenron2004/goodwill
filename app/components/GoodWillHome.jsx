@@ -8,14 +8,18 @@ import { ProgramsSection } from "./sections/ProgramsSection";
 import { StudentSuccessSection } from "./sections/StudentSuccessSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
 
+
+
 export function GoodWillHome() {
   return (
     <main className="flex flex-col w-full items-center bg-white">
-      <div className="w-full max-w-[1280px] mx-auto">
+      <div className="w-full  mx-auto">
         <OverviewSection />
       </div>
       <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         <HighlightsSection />
+    
+        
       </div>
       <div className="w-full">
         <EmpowermentSection />

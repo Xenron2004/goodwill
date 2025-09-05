@@ -90,7 +90,7 @@ export function CareerOpportunitiesSection() {
       </div>
 
       <div className="w-full lg:w-[542px] h-[400px] lg:h-[723px] overflow-hidden bg-cover bg-center"
-           style={{backgroundImage: "url('https://images.pexels.com/photos/2467558/pexels-photo-2467558.jpeg')"}}>
+           style={{backgroundImage: "url('/assets/Ten.jpg')"}}>
       </div>
     </section>
   );

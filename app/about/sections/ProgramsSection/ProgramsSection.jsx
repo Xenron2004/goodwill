@@ -5,22 +5,22 @@ const programsData = [
   {
     title: "Bachelor in Hotel Management",
     description: "In-depth academic and practical training for leadership roles in global hospitality.",
-    image: "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=400",
+    image: '/assets/One.jpg',
   },
   {
     title: "Diploma in Hotel Management", 
     description: "Fast-track skill development for entry into the hospitality industry.",
-    image: "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600&h=400",
+    image: "/assets/Two.jpg",
   },
   {
     title: "Crash Course for Cruise Lines",
     description: "Specialized training for cruise ship careers with hands-on experience.",
-    image: "https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&w=600&h=400",
+    image: "/assets/Three.jpg",
   },
   {
     title: "Crash Course for Culinary Arts",
     description: "Professional culinary training for aspiring chefs and kitchen professionals.",
-    image: "https://images.pexels.com/photos/3184294/pexels-photo-3184294.jpeg?auto=compress&cs=tinysrgb&w=600&h=400",
+    image: "/assets/Four.jpg",
   },
 ];
 
@@ -30,11 +30,11 @@ export const ProgramsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-8 lg:gap-12 mb-8 lg:mb-12">
           <div className="flex flex-col w-full max-w-2xl items-center gap-4 lg:gap-5 text-center">
-            <h2 className="font-playfair font-medium text-[#243646] text-2xl lg:text-3xl xl:text-4xl leading-tight">
+            <h2 className="font-['Playfair_Display',Helvetica] font-medium text-[#243646] text-2xl lg:text-3xl xl:text-4xl leading-tight">
               Explore Our Programs
             </h2>
 
-            <p className="font-normal text-[#243646]/70 text-sm lg:text-base leading-relaxed">
+            <p className="font-normal font-['Helvetica_Neue-Regular',Helvetica] text-[#243646]/70 text-sm lg:text-base leading-relaxed">
               Career-Focused Training & Global Opportunities — Tailored
               Programs to Launch You into Hospitality, Oil & Gas, and
               International Education.

@@ -29,7 +29,7 @@ export const FacultySection = () => {
               Meet Our Faculty
             </h2>
 
-            <p className="font-normal text-[#243646]/70 text-sm lg:text-base leading-relaxed">
+            <p className="font-normal font-['Helvetica_Neue-Regular',Helvetica]  text-[#243646]/70 text-sm lg:text-base leading-relaxed">
               We're natural leaders, inspiring others with our passion and
               conviction. You can feel our energy.
             </p>

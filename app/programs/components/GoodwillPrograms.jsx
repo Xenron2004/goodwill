@@ -5,8 +5,7 @@ import { NavigationSection } from './sections/NavigationSection'
 import { ProgramDetailsSection } from './sections/ProgramDetailsSection'
 import { CourseOverviewSection } from './sections/CourseOverviewSection'
 import { EnrollmentInfoSection } from './sections/EnrollmentInfoSection'
-import { ContactInfoSection } from './sections/ContactInfoSection'
-import { FooterSection } from '../../../components/Footer'
+
 
 export const GoodwillPrograms = () => {
   return (

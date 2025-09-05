@@ -9,7 +9,7 @@ export function EmpowermentSection() {
       backgroundImage: "https://images.pexels.com/photos/2467558/pexels-photo-2467558.jpeg",
     },
     {
-      backgroundImage: "https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg",
+      backgroundImage: "https://images.unsplash.com/photo-1462539405390-d0bdb635c7d1?auto=format&fit=crop&w=1200",
     },
     {
       backgroundImage: "https://images.pexels.com/photos/2474661/pexels-photo-2474661.jpeg",

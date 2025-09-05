@@ -89,19 +89,19 @@ export const DirectorsSection = () => {
               </h2>
 
               <div className="flex flex-col gap-4 lg:gap-6">
-                <p className="font-light text-[#243646] text-sm lg:text-base leading-relaxed">
+                <p className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base leading-relaxed">
                   Now is your moment to make the right choice for a successful
                   career and a better future.
                 </p>
 
-                <p className="font-light text-[#243646] text-sm lg:text-base leading-relaxed">
+                <p className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base tracking-wide leading-relaxed">
                   With over a decade of experience in teaching and recruitment,
                   Good Will Institute is dedicated to nurturing young, talented
                   individuals—from bustling cities to rural villages—by connecting
                   them to the best career opportunities across the globe.
                 </p>
 
-                <p className="font-light text-[#243646] text-sm lg:text-base leading-relaxed">
+                <p className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base leading-relaxed">
                   Our mission is to not only build your skills but also to bring pride
                   and happiness to your families. Join hands with Good Will and let's turn your dreams into
                   reality.
@@ -112,19 +112,19 @@ export const DirectorsSection = () => {
             {/* Directors */}
             <div className="flex flex-col sm:flex-row gap-6 lg:gap-10 pt-4">
               <div className="flex flex-col gap-1">
-                <h4 className="font-medium text-[#243646] text-base lg:text-lg">
+                <h4 className="font-medium font-['Helvetica_Neue-Regular',Helvetica]  text-[#243646] text-base lg:text-lg">
                   Vijay Kumar
                 </h4>
-                <p className="font-light text-[#243646]/70 text-sm lg:text-base">
+                <p className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#243646]/70 text-sm lg:text-base">
                   Director
                 </p>
               </div>
 
               <div className="flex flex-col gap-1">
-                <h4 className="font-medium text-[#243646] text-base lg:text-lg">
+                <h4 className="font-medium font-['Helvetica_Neue-Regular',Helvetica] text-[#243646] text-base lg:text-lg">
                   Vidya Sagar
                 </h4>
-                <p className="font-light text-[#243646]/70 text-sm lg:text-base">
+                <p className="font-normal font-['Helvetica_Neue-Regular',Helvetica] text-[#243646]/70 text-sm lg:text-base">
                   Director
                 </p>
               </div>
