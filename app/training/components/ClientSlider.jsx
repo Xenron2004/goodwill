@@ -202,9 +202,14 @@ const ClientSlider = () => {
       <section className="flex flex-col mx-auto items-center justify-center gap-7 max-w-[1280px] lg:px-0 w-11/12">
         <div>
           <div className=" text-center">
-            <div className="font-['Playfair_Display',Helvetica] text-center font-medium text-[#243646] text-2xl lg:text-3xl xl:text-4xl leading-tight">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.6 }}
+              viewport={{ once: true }}
+            className="font-['Playfair_Display',Helvetica] text-center font-medium text-[#243646] text-2xl lg:text-3xl xl:text-4xl leading-tight">
               100+ Training Partners Worldwide
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>

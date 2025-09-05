@@ -1,5 +1,8 @@
+"use client"
 import React from "react";
 import { ProgramCard } from "../../components/ProgramCard";
+import { motion } from "framer-motion"; 
+
 
 const programsData = [
   {
@@ -30,15 +33,25 @@ export const ProgramsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-8 lg:gap-12 mb-8 lg:mb-12">
           <div className="flex flex-col w-full max-w-2xl items-center gap-4 lg:gap-5 text-center">
-            <h2 className="font-['Playfair_Display',Helvetica] font-medium text-[#243646] text-2xl lg:text-3xl xl:text-4xl leading-tight">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.6 }}
+              viewport={{ once: true }}
+            className="font-['Playfair_Display',Helvetica] font-medium text-[#243646] text-2xl lg:text-3xl xl:text-4xl leading-tight">
               Explore Our Programs
-            </h2>
+            </motion.h2>
 
-            <p className="font-normal font-['Helvetica_Neue-Regular',Helvetica] text-[#243646]/70 text-sm lg:text-base leading-relaxed">
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              viewport={{ once: true }}
+            className="font-normal font-['Helvetica_Neue-Regular',Helvetica] text-[#243646]/70 text-sm lg:text-base leading-relaxed">
               Career-Focused Training & Global Opportunities — Tailored
               Programs to Launch You into Hospitality, Oil & Gas, and
               International Education.
-            </p>
+            </motion.p>
           </div>
 
           {/* Programs Grid */}

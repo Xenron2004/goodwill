@@ -1,5 +1,7 @@
+"use client"
 import React from "react";
 import { FacultyCard } from "../../components/FacultyCard";
+import { motion } from "framer-motion";
 
 const facultyData = [
   {
@@ -19,20 +21,32 @@ const facultyData = [
   },
 ];
 
+
+
 export const FacultySection = () => {
   return (
     <section className="w-full bg-white py-12 lg:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center gap-8 lg:gap-12">
           <div className="flex flex-col w-full max-w-2xl items-center gap-4 lg:gap-5 text-center">
-            <h2 className="font-['Playfair_Display',Helvetica] font-medium text-[#243646] text-2xl lg:text-[48px] xl:text-[48px] leading-tight">
+            <motion.h2 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.6 }}
+              viewport={{ once: true }}
+            className="font-['Playfair_Display',Helvetica] font-medium text-[#243646] text-2xl lg:text-[48px] xl:text-[48px] leading-tight">
               Meet Our Faculty
-            </h2>
+            </motion.h2>
 
-            <p className="font-normal font-['Helvetica_Neue-Regular',Helvetica]  text-[#243646]/70 text-sm lg:text-base leading-relaxed">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              viewport={{ once: true }}
+            className="font-normal font-['Helvetica_Neue-Regular',Helvetica]  text-[#243646]/70 text-sm lg:text-base leading-relaxed">
               We're natural leaders, inspiring others with our passion and
               conviction. You can feel our energy.
-            </p>
+            </motion.p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full max-w-4xl">

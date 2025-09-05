@@ -6,8 +6,8 @@ export const HeroSection = () => {
     <section className="w-full bg-[#1e3a54] overflow-hidden relative">
       <div className="max-w-7xl  flex flex-col items-center justify-center mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
         {/* Hero Content */}
-        <div className="flex flex-col lg:flex-row items-start justify-end lg:items-baseline  gap-6 lg:gap-16 mb-12 lg:mb-20">
-          <div className="flex-1 max-w-3xl">
+        <div className="flex flex-col lg:flex-row place-items-end justify-start   gap-6 lg:gap-16 mb-12 lg:mb-20">
+          <div className="flex flex-col gap-8 max-w-3xl">
             <h1 className="text-2xl font-['Playfair_Display',Helvetica] sm:text-3xl lg:text-[68px] lg:leading-[76px] xl:text-[72px] xl:leading-[80px] 2xl:text-[80px] 2xl:leading-[88px]">
               <span className="text-[#5fd5b1] font-normal italic font-playfair block mb-2">
                 Excellence in
@@ -79,8 +79,7 @@ export const HeroSection = () => {
           <div
             className="absolute inset-0 bg-cover bg-center transform transition-transform duration-500 hover:scale-105"
             style={{
-              backgroundImage:
-                "url('/assets/Nineteen.jpg')",
+              backgroundImage: "url('/assets/Nineteen.jpg')",
             }}
           >
             <div className="absolute inset-0 bg-black/40" />

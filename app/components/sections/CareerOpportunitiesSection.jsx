@@ -1,4 +1,9 @@
+
+
+"use client";
+
 import { Button } from "../../../components/ui/button";
+import { motion } from "framer-motion";
 
 export function CareerOpportunitiesSection() {
   const addresses = [
@@ -12,22 +17,35 @@ export function CareerOpportunitiesSection() {
     "Phone: +91 79977 78855",
   ];
 
+
   return (
     <section className="flex flex-col lg:flex-row w-full items-start justify-between gap-8 relative">
       <div className="flex flex-col w-full lg:w-[478px] items-start gap-8 lg:gap-12 relative">
         <div className="flex flex-col items-start gap-6 lg:gap-10 relative self-stretch w-full">
           <div className="flex flex-col items-start gap-5 relative self-stretch w-full">
-            <h2 className="relative self-stretch mt-[-1.00px] font-['Playfair_Display',Helvetica] font-normal text-black text-3xl lg:text-5xl tracking-[0] leading-normal">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="relative self-stretch mt-[-1.00px] font-['Playfair_Display',Helvetica] font-normal text-black text-3xl lg:text-5xl tracking-[0] leading-normal"
+            >
               Contact & Enroll
-            </h2>
+            </motion.h2>
 
-            <p className="relative w-full lg:w-[434px] font-['Helvetica_Neue-Light',Helvetica] font-light text-[#243646b2] text-sm lg:text-base tracking-[0] leading-relaxed lg:leading-6">
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              viewport={{ once: true }}
+              className="relative w-full lg:w-[434px] font-['Helvetica_Neue-Light',Helvetica] font-light text-[#243646b2] text-sm lg:text-base tracking-[0] leading-relaxed lg:leading-6"
+            >
               Ready to launch your global career? Take the first step toward
               high-paying international opportunities in hospitality, cruise
               lines, and energy sectors. Apply today or fill out our quick
               contact form to receive detailed program information, career
               guidance, and personalized support from our admissions team.
-            </p>
+            </motion.p>
           </div>
 
           <div className="flex flex-col w-full lg:w-[378px] items-start gap-6 lg:gap-[25px] relative">
@@ -89,9 +107,10 @@ export function CareerOpportunitiesSection() {
         </div>
       </div>
 
-      <div className="w-full lg:w-[542px] h-[400px] lg:h-[723px] overflow-hidden bg-cover bg-center"
-           style={{backgroundImage: "url('/assets/Ten.jpg')"}}>
-      </div>
+      <div
+        className="w-full lg:w-[542px] h-[400px] lg:h-[723px] overflow-hidden bg-cover bg-center"
+        style={{ backgroundImage: "url('/assets/Ten.jpg')" }}
+      ></div>
     </section>
   );
 }

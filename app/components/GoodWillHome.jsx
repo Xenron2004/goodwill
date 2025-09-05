@@ -12,28 +12,28 @@ import { TestimonialsSection } from "./sections/TestimonialsSection";
 
 export function GoodWillHome() {
   return (
-    <main className="flex flex-col w-full items-center bg-white">
+    <main className="flex flex-col w-full items-center  bg-white">
       <div className="w-full  mx-auto">
         <OverviewSection />
       </div>
-      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 ">
         <HighlightsSection />
     
         
       </div>
       <div className="w-full">
-        <EmpowermentSection />
+        {/* <EmpowermentSection /> */}
       </div>
-      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-14 ">
         <ProgramsSection />
       </div>
-      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-14 ">
         <TestimonialsSection />
       </div>
-      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-14 ">
         <StudentSuccessSection />
       </div>
-      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-14 ">
         <CareerOpportunitiesSection />
       </div>
    

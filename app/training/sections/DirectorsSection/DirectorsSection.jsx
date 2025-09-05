@@ -1,5 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+
 
 const sliderImages = [
   "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=800",
@@ -17,7 +19,9 @@ export const DirectorsSection = () => {
     const interval = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
-          setCurrentImageIndex((prevIndex) => (prevIndex + 1) % sliderImages.length);
+          setCurrentImageIndex(
+            (prevIndex) => (prevIndex + 1) % sliderImages.length
+          );
           return 0;
         }
         return prev + 1;
@@ -55,13 +59,23 @@ export const DirectorsSection = () => {
               {/* Progress Bars */}
               <div className="absolute top-4 right-4 lg:top-6 lg:right-6 z-10 flex flex-col gap-1">
                 {sliderImages.map((_, index) => (
-                  <div key={index} className="w-12 lg:w-16 h-0.5 bg-white/30  overflow-hidden">
+                  <div
+                    key={index}
+                    className="w-12 lg:w-16 h-0.5 bg-white/30  overflow-hidden"
+                  >
                     <div
                       className={`h-full bg-white transition-all duration-100 ease-linear ${
-                        index === currentImageIndex ? 'opacity-100' : 'opacity-50'
+                        index === currentImageIndex
+                          ? "opacity-100"
+                          : "opacity-50"
                       }`}
                       style={{
-                        width: index === currentImageIndex ? `${progress}%` : index < currentImageIndex ? '100%' : '0%'
+                        width:
+                          index === currentImageIndex
+                            ? `${progress}%`
+                            : index < currentImageIndex
+                            ? "100%"
+                            : "0%",
                       }}
                     />
                   </div>
@@ -73,7 +87,9 @@ export const DirectorsSection = () => {
                 <div
                   key={index}
                   className={`absolute inset-0 bg-cover bg-center transition-all duration-700 ease-in-out ${
-                    index === currentImageIndex ? 'opacity-100 scale-100' : 'opacity-0 scale-105'
+                    index === currentImageIndex
+                      ? "opacity-100 scale-100"
+                      : "opacity-0 scale-105"
                   }`}
                   style={{ backgroundImage: `url(${image})` }}
                 />
@@ -84,28 +100,50 @@ export const DirectorsSection = () => {
           {/* Right Side - Content */}
           <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-8">
             <div className="flex flex-col gap-6 lg:gap-8">
-              <h2 className="font-['Playfair_Display',Helvetica] font-normal text-black text-xl sm:text-2xl lg:text-3xl xl:text-4xl leading-tight">
+              <motion.h2
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: 0.6 }}
+                viewport={{ once: true }}
+                className="font-['Playfair_Display',Helvetica] font-normal text-black text-xl sm:text-2xl lg:text-3xl xl:text-4xl leading-tight"
+              >
                 Message from the Directors
-              </h2>
+              </motion.h2>
 
               <div className="flex flex-col gap-4 lg:gap-6">
-                <p className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base leading-relaxed">
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.6 }}
+              viewport={{ once: true }}
+                className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base leading-relaxed">
                   Now is your moment to make the right choice for a successful
                   career and a better future.
-                </p>
+                </motion.p>
 
-                <p className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base tracking-wide leading-relaxed">
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.7 }}
+              viewport={{ once: true }}
+                className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base tracking-wide leading-relaxed">
                   With over a decade of experience in teaching and recruitment,
                   Good Will Institute is dedicated to nurturing young, talented
-                  individuals—from bustling cities to rural villages—by connecting
-                  them to the best career opportunities across the globe.
-                </p>
+                  individuals—from bustling cities to rural villages—by
+                  connecting them to the best career opportunities across the
+                  globe.
+                </motion.p>
 
-                <p className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base leading-relaxed">
-                  Our mission is to not only build your skills but also to bring pride
-                  and happiness to your families. Join hands with Good Will and let's turn your dreams into
-                  reality.
-                </p>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+              viewport={{ once: true }}
+                className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base leading-relaxed">
+                  Our mission is to not only build your skills but also to bring
+                  pride and happiness to your families. Join hands with Good
+                  Will and let's turn your dreams into reality.
+                </motion.p>
               </div>
             </div>
 

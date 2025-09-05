@@ -1,5 +1,6 @@
 'use client'
 
+import  Link  from 'next/link'
 import { Button } from '../ui/button'
 
 export const HeroBannerSection = () => {
@@ -20,9 +21,11 @@ export const HeroBannerSection = () => {
           </p>
         </div>
 
+        <Link href='/contact' >
         <Button className="flex w-full md:w-[150px] h-11 items-center justify-center gap-2.5 px-4 py-2.5 bg-[#243646] hover:bg-[#243646]/90 text-white font-['Helvetica_Neue-Medium',Helvetica] font-normal text-sm md:text-base tracking-[0] leading-[normal] whitespace-nowrap">
           Enquire Now
         </Button>
+        </Link>
       </div>
 
       {/* <div 
