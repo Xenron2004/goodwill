@@ -1,7 +1,6 @@
-
-
 "use client";
 
+import Link from "next/link";
 import { Button } from "../../../components/ui/button";
 import { motion } from "framer-motion";
 
@@ -16,7 +15,6 @@ export function CareerOpportunitiesSection() {
     "Email: info@goodwillinstitutes.in, jobs@goodwillinstitutes.in",
     "Phone: +91 79977 78855",
   ];
-
 
   return (
     <section className="flex flex-col lg:flex-row w-full items-start justify-between gap-8 relative">
@@ -90,11 +88,13 @@ export function CareerOpportunitiesSection() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 lg:gap-6 relative">
-          <Button className="flex items-center justify-center gap-2.5 px-6 py-2.5 bg-[#243646] rounded-full h-auto w-full sm:w-auto">
-            <span className="relative w-fit mt-[-1.00px] font-['Helvetica_Neue-Regular',Helvetica] font-normal text-white text-sm lg:text-base tracking-[0] leading-normal whitespace-nowrap">
-              Get Free Consultation
-            </span>
-          </Button>
+          <Link href="/contact">
+            <Button className="flex items-center justify-center gap-2.5 px-6 py-2.5 bg-[#243646] rounded-full h-auto w-full sm:w-auto">
+              <span className="relative w-fit mt-[-1.00px] font-['Helvetica_Neue-Regular',Helvetica] font-normal text-white text-sm lg:text-base tracking-[0] leading-normal whitespace-nowrap">
+                Get Free Consultation
+              </span>
+            </Button>
+          </Link>
 
           <Button
             variant="secondary"
@@ -107,10 +107,21 @@ export function CareerOpportunitiesSection() {
         </div>
       </div>
 
-      <div
+      {/* <div
         className="w-full lg:w-[542px] h-[400px] lg:h-[723px] overflow-hidden bg-cover bg-center"
         style={{ backgroundImage: "url('/assets/Ten.jpg')" }}
-      ></div>
+      ></div> */}
+      <div style={{ width: "542px", height: "650px" }}>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7590099.095677327!2d77.92617885000003!3d21.737529358550262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3be5bac24fd121%3A0x652c0501ffb6b2a8!2sGood%20Will%20Institute%20of%20Hospitality%20and%20Hotel%20Management!5e0!3m2!1sen!2sin!4v1757184632298!5m2!1sen!2sin"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
     </section>
   );
 }

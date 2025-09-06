@@ -21,16 +21,16 @@
 //         </Button>
 //       </main>
 
-
 //     </section>
 //   );
 // }
 
-
-
+"use client";
 import { MenuIcon } from "lucide-react";
 import { Button } from "../../../components/ui/button";
 import Navbar from "../../../components/Navbar";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 export function OverviewSection() {
   return (
@@ -52,23 +52,43 @@ export function OverviewSection() {
       <div className="absolute inset-0 bg-black/30"></div>
 
       {/* Content */}
-      <main className=" z-10 flex flex-col w-full max-w-[733px] items-start gap-6 lg:gap-8 absolute top-32 sm:top-40 lg:top-[180px] left-4 sm:left-8 lg:left-32 px-4 lg:px-0">
-        <h2 className="font-['Playfair_Display',Helvetica] font-semibold text-white text-2xl sm:text-3xl lg:text-5xl leading-tight lg:leading-[72px]">
+      <main className=" z-10 flex flex-col w-full max-w-[780px] items-start gap-6 lg:gap-8 absolute top-32 sm:top-40 lg:top-[180px] left-4 sm:left-8 lg:left-32 px-4 lg:px-0">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="font-['Playfair_Display',Helvetica] font-semibold text-white text-2xl sm:text-3xl lg:text-5xl leading-tight lg:leading-[72px]"
+        >
           Launch Your World-Class Hospitality Career in Just 60 Days
-        </h2>
+        </motion.h2>
 
-        <p className="w-full max-w-[629px] font-['Helvetica-Regular',Helvetica] font-normal text-white text-sm sm:text-base lg:text-[17px] leading-relaxed lg:leading-[25.5px]">
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="w-full max-w-[629px] font-['Helvetica-Regular',Helvetica] font-normal text-white text-sm sm:text-base lg:text-[17px] leading-relaxed lg:leading-[25.5px]"
+        >
           Join India's leading hospitality and hotel management institute,
           offering hands-on training, internationally recognized certifications,
           and guaranteed placements with top cruise lines, luxury hotels, and
           oil & gas companies — all within just 60 days.
-        </p>
+        </motion.p>
 
-        <Button className="w-auto h-10 bg-white text-black hover:bg-gray-100 rounded-[32px] font-['Helvetica-Regular',Helvetica] text-sm sm:text-base lg:text-[17px] px-6">
+
+        <Link  href="/contact" >
+        <motion.button
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4, delay: 0.6}}
+          viewport={{ once: true }}
+          className="w-auto h-10 bg-white text-black hover:bg-gray-100 rounded-[32px] font-['Helvetica-Regular',Helvetica] text-sm sm:text-base lg:text-[17px] px-6"
+        >
           Apply Now
-        </Button>
+        </motion.button>
+        </Link>
       </main>
     </section>
   );
 }
-

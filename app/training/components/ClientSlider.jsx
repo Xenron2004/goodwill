@@ -232,7 +232,7 @@ const ClientSlider = () => {
                   alt={client.name}
                   fill
                   className=" object-contain"
-                  quality={85}
+                
                 />
               </Link>
             </div>
@@ -250,7 +250,7 @@ const ClientSlider = () => {
           }
         }
         .animate-scroll-left {
-          animation: scroll-left 30s linear infinite;
+          animation: scroll-left 35s linear infinite;
         }
       `}</style>
     </section>

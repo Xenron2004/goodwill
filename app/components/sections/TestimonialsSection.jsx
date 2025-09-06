@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../../../components/ui/button";
 import Image from "next/image";
 
@@ -9,22 +10,22 @@ export function TestimonialsSection() {
         className="relative flex-1 w-full lg:max-w-[542px] h-[400px] lg:h-[722px] overflow-hidden bg-cover bg-center"
         style={{
           backgroundImage:
-            "url('/assets/Ten.jpg')",
+            "url('/assets/TwentyOne.jpg')",
         }}
       >
         <div className="absolute top-8 left-8 flex items-center gap-3">
           <div className="flex flex-col items-center justify-center p-1  rounded-full">
-            <Image
+            {/* <Image
               src="/assets/GoodwillLogo.svg" // path from public/
               alt="Goodwill Logo"
               width={48}
               height={48}
               className="object-contain"
-            />
+            /> */}
           </div>
-          <div className="font-['Helvetica_Neue-Regular',Helvetica] font-normal text-white tracking-[0] leading-relaxed text-sm whitespace-nowrap">
+          {/* <div className="font-['Helvetica_Neue-Regular',Helvetica] font-normal text-white tracking-[0] leading-relaxed text-sm whitespace-nowrap">
             GoodWill Institute
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -51,6 +52,8 @@ export function TestimonialsSection() {
           </div>
         </div>
 
+
+         <Link href="/about" >
         <Button
           variant="ghost"
           className="inline-flex items-center justify-center gap-2.5 px-0 py-0.5 h-auto mb-[-1.00px] ml-[-1.00px] border-b cursor-pointer border-solid border-[#243646] bg-transparent hover:bg-transparent rounded-none"
@@ -59,6 +62,7 @@ export function TestimonialsSection() {
             More about us
           </span>
         </Button>
+        </Link>
       </div>
     </section>
   );

@@ -801,7 +801,7 @@ const sidebarItems = [
 const bottomLinks = [
   { name: "Bachelor in Hotel Management", path: "/programs" },
   { name: "Diploma in Hotel Management", path: "/programs" },
-  { name: "Crash Course for Cruise Lines", path: "/programs" },
+
   { name: "Crash Course for Culinary Arts", path: "/programs" },
 ];
 
@@ -832,7 +832,7 @@ const Navbar = () => {
             <Image
               src="/assets/GoodwillSv.png"
               alt="Yacht Logo"
-              width={280}
+              width={300}
               height={91}
               priority
             />
@@ -840,14 +840,14 @@ const Navbar = () => {
         </div>
 
         <div className="absolute left-[254px] right-0 h-[90px] flex items-center justify-between px-4 bg-[#E3AF45]">
-          <h1 className="pl-40 text-[32px] font-semibold text-white font-['Playfair_Display',Helvetica]">
+          <h1 className="pl-40  text-[24px] md:text-[26px] lg:text-[32px] font-semibold text-white font-['Playfair_Display',Helvetica]">
             Good Will Institute of Hospitality & Catering Technology
           </h1>
           <button
             onClick={toggleDropdown}
             className="text-white hover:text-gray-200 transition-colors duration-200 pr-10"
           >
-            <Equal size={36} />
+            <Equal size={40} />
           </button>
         </div>
       </nav>
@@ -868,7 +868,7 @@ const Navbar = () => {
 
       {/* Right-Side Dropdown (Desktop: 30% width, Mobile: full) */}
       <div
-        className={`fixed top-0 right-0 h-full z-[100] bg-[#e3af45] transform transition-transform duration-500 ease-in-out 
+        className={`fixed top-0 right-0 h-full z-[100] bg-[#153856] transform transition-transform duration-500 ease-in-out 
         ${dropdownOpen ? "translate-x-0" : "translate-x-full"} 
         w-full md:w-[30%]`}
         style={{ pointerEvents: dropdownOpen ? "auto" : "none" }}
