@@ -7,6 +7,7 @@ import { FacultySection } from "./sections/FacultySection/FacultySection";
 import { Footer } from "./components/Footer";
 import { FooterSection } from "../../components/Footer";
 import ClientSlider from "./components/ClientSlider";
+import OurPartners from "./components/OurPartners";
 
  const Training = () => {
   return (
@@ -14,8 +15,9 @@ import ClientSlider from "./components/ClientSlider";
      
       <main className="w-full flex flex-col items-center  justify-center">
         <HeroSection />
-        <ClientSlider/>
+        {/* <ClientSlider/> */}
         <ProgramsSection />
+        <OurPartners/>
         <DirectorsSection />
         <FacultySection />
       </main>

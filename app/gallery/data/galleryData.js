@@ -95,36 +95,36 @@ export const galleryData = {
       image: "https://images.pexels.com/photos/2096934/pexels-photo-2096934.jpeg?auto=compress&cs=tinysrgb&w=500"
     }
   ],
-  Sports: [
-    {
-      title: "Basketball Court",
-      description: "Indoor court for competitive games and recreational activities.",
-      image: "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=500"
-    },
-    {
-      title: "Swimming Pool",
-      description: "Olympic-size pool for fitness and competitive swimming programs.",
-      image: "https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=500"
-    },
-    {
-      title: "Fitness Center",
-      description: "Fully equipped gym with modern cardio and strength training equipment.",
-      image: "https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=500"
-    },
-    {
-      title: "Tennis Courts",
-      description: "Professional tennis courts for both beginners and advanced players.",
-      image: "https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=500"
-    },
-    {
-      title: "Football Field",
-      description: "Regulation-size field for football matches and training sessions.",
-      image: "https://images.pexels.com/photos/257970/pexels-photo-257970.jpeg?auto=compress&cs=tinysrgb&w=500"
-    },
-    {
-      title: "Sports Events",
-      description: "Annual tournaments and inter-collegiate competitions.",
-      image: "https://images.pexels.com/photos/1263349/pexels-photo-1263349.jpeg?auto=compress&cs=tinysrgb&w=500"
-    }
-  ]
+  // Sports: [
+  //   {
+  //     title: "Basketball Court",
+  //     description: "Indoor court for competitive games and recreational activities.",
+  //     image: "https://images.pexels.com/photos/1752757/pexels-photo-1752757.jpeg?auto=compress&cs=tinysrgb&w=500"
+  //   },
+  //   {
+  //     title: "Swimming Pool",
+  //     description: "Olympic-size pool for fitness and competitive swimming programs.",
+  //     image: "https://images.pexels.com/photos/863988/pexels-photo-863988.jpeg?auto=compress&cs=tinysrgb&w=500"
+  //   },
+  //   {
+  //     title: "Fitness Center",
+  //     description: "Fully equipped gym with modern cardio and strength training equipment.",
+  //     image: "https://images.pexels.com/photos/1552252/pexels-photo-1552252.jpeg?auto=compress&cs=tinysrgb&w=500"
+  //   },
+  //   {
+  //     title: "Tennis Courts",
+  //     description: "Professional tennis courts for both beginners and advanced players.",
+  //     image: "https://images.pexels.com/photos/209977/pexels-photo-209977.jpeg?auto=compress&cs=tinysrgb&w=500"
+  //   },
+  //   {
+  //     title: "Football Field",
+  //     description: "Regulation-size field for football matches and training sessions.",
+  //     image: "https://images.pexels.com/photos/257970/pexels-photo-257970.jpeg?auto=compress&cs=tinysrgb&w=500"
+  //   },
+  //   {
+  //     title: "Sports Events",
+  //     description: "Annual tournaments and inter-collegiate competitions.",
+  //     image: "https://images.pexels.com/photos/1263349/pexels-photo-1263349.jpeg?auto=compress&cs=tinysrgb&w=500"
+  //   }
+  // ]
 };

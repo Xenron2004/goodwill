@@ -1,5 +1,6 @@
 import React from "react";
 import { ImageSlider } from "../../components/ImageSlider";
+import ClientSlider from "../../components/ClientSlider";
 
 export const HeroSection = () => {
   return (
@@ -10,13 +11,16 @@ export const HeroSection = () => {
           <div className="flex flex-col gap-8 max-w-3xl">
             <h1 className="text-2xl font-['Playfair_Display',Helvetica] sm:text-3xl lg:text-[68px] lg:leading-[76px] xl:text-[72px] xl:leading-[80px] 2xl:text-[80px] 2xl:leading-[88px]">
               <span className=" font-medium  font-playfair block mb-2">
-                From Training to 
+                From Training to
               </span>
-              <span className="font-playfair font-medium">
-                Global Careers
-              </span>
+              <span className="font-playfair font-medium">Global Careers</span>
             </h1>
-            <p className="text-[17px] leading-normal tracking-normal font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] ">Explore our vibrant campus, immersive training sessions, and inspiring career journeys through a curated collection of photos that capture student life, hands-on learning, and global hospitality opportunities</p>
+            <p className="text-[17px] leading-normal tracking-normal font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] ">
+              Explore our vibrant campus, immersive training sessions, and
+              inspiring career journeys through a curated collection of photos
+              that capture student life, hands-on learning, and global
+              hospitality opportunities
+            </p>
           </div>
 
           <div className="flex flex-col w-full lg:w-auto lg:max-w-sm gap-4 lg:gap-6">
@@ -42,8 +46,10 @@ export const HeroSection = () => {
           <ImageSlider />
         </div>
 
+        <ClientSlider />
+
         {/* Promise Section */}
-        <div className="flex flex-col gap-8 lg:gap-12 mb-12 lg:mb-20">
+        <div className="flex flex-col mt-[100px] gap-8 lg:gap-12 mb-12 lg:mb-20">
           <div className="flex flex-col gap-6 lg:gap-8">
             <div className="flex flex-col max-w-7xl gap-4 lg:gap-6">
               <h3 className="font-medium text-[#212b36] text-sm lg:text-base tracking-wider uppercase">
@@ -51,7 +57,9 @@ export const HeroSection = () => {
               </h3>
 
               <p className="font-['Playfair_Display',Helvetica] font-medium text-[#212b36] text-3xl sm:text-2xl lg:text-4xl xl:text-5xl leading-relaxed sm:leading-[36px] lg:leading-[48px] xl:leading-[60px]">
-                We provide industry-focused training, personalized guidance, and trusted placement support to ensure every student transitions confidently from the classroom to successful global careers.
+                We provide industry-focused training, personalized guidance, and
+                trusted placement support to ensure every student transitions
+                confidently from the classroom to successful global careers.
               </p>
             </div>
 
@@ -78,13 +86,12 @@ export const HeroSection = () => {
           <div
             className="absolute inset-0 bg-cover bg-center transform transition-transform duration-500 hover:scale-105"
             style={{
-              backgroundImage:
-                "url('/assets/Nineteen.jpg')",
+              backgroundImage: "url('/assets/Seven.jpg')",
             }}
           >
             <div className="absolute inset-0 bg-black/40" />
             <div className="relative z-10 flex flex-col max-w-xl gap-4 lg:gap-6 p-6 lg:p-12 h-full justify-center">
-              <h2 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-['Playfair_Display',Helvetica] font-medium text-white leading-relaxed">
+              <h2 className="text-xl mt-14 sm:text-2xl lg:text-3xl xl:text-4xl font-['Playfair_Display',Helvetica] font-medium text-white leading-relaxed">
                 Where Careers Take Off Worldwide
               </h2>
 
