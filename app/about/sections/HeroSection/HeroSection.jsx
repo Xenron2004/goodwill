@@ -3,7 +3,7 @@ import { ImageSlider } from "../../components/ImageSlider";
 
 export const HeroSection = () => {
   return (
-    <section className="w-full bg-[#1e3a54] overflow-hidden relative">
+    <section className="w-full mt-[-0.5px] bg-[#1e3a54] overflow-hidden relative">
       <div className="max-w-7xl  flex flex-col items-center justify-center mx-auto px-4 sm:px-6 lg:px-8 py-8 lg:py-16">
         {/* Hero Content */}
         <div className="flex flex-col lg:flex-row place-items-end justify-start   gap-6 lg:gap-16 mb-12 lg:mb-20">
@@ -79,7 +79,7 @@ export const HeroSection = () => {
           <div
             className="absolute inset-0 bg-cover bg-center transform transition-transform duration-500 hover:scale-105"
             style={{
-              backgroundImage: "url('/assets/Nineteen.jpg')",
+              backgroundImage: "url('/assets/Seven.jpg')",
             }}
           >
             <div className="absolute inset-0 bg-black/40" />

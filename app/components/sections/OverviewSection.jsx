@@ -34,7 +34,7 @@ import Link from "next/link";
 
 export function OverviewSection() {
   return (
-    <section className="relative w-full h-[500px] sm:h-[600px] lg:h-[740px] overflow-hidden">
+    <section className="relative w-full mt-[-0.5px] h-[500px] sm:h-[600px] lg:h-[740px] overflow-hidden">
       {/* Video Background */}
       <video
         autoPlay

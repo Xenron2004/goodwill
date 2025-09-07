@@ -6,32 +6,35 @@ import { EmpowermentSection } from "./sections/EmpowermentSection";
 import { HighlightsSection } from "./sections/HighlightsSection";
 import { OverviewSection } from "./sections/OverviewSection";
 import { ProgramsSection } from "./sections/ProgramsSection";
+import Statistics from "./sections/Statistics";
 import { StudentSuccessSection } from "./sections/StudentSuccessSection";
 import { TestimonialsSection } from "./sections/TestimonialsSection";
 
-
-
 export function GoodWillHome() {
   return (
-    <main className="flex flex-col w-full items-center  bg-white">
+    <main className="flex flex-col w-full items-center  ">
       <div className="w-full  mx-auto">
         <OverviewSection />
       </div>
       <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 ">
         <HighlightsSection />
-    
-        
       </div>
-    
+
       <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 ">
         <ProgramsSection />
       </div>
+
       <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20 ">
         <TestimonialsSection />
       </div>
-        <div className="w-full">
+      
+      {/* <div className="w-full  ">
+        <Statistics/>
+      </div> */}
+
+      <div className="w-full">
         {/* <EmpowermentSection /> */}
-        <EnrollmentInfoSection/>
+        <EnrollmentInfoSection />
       </div>
       <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-14 ">
         <StudentSuccessSection />
@@ -39,7 +42,6 @@ export function GoodWillHome() {
       <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-14 ">
         <CareerOpportunitiesSection />
       </div>
-   
     </main>
   );
 }

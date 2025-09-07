@@ -9,7 +9,7 @@ import { FooterSection } from "../../components/Footer";
 
  const GoodwillAbout = () => {
   return (
-    <div className="bg-white w-full min-h-screen">
+    <div className=" w-full min-h-screen">
      
       <main className="w-full">
         <HeroSection />

@@ -826,7 +826,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="hidden md:flex w-full h-[91px] relative bg-white z-50">
+      <nav className="hidden md:flex w-full h-[91px] relative  z-50">
         <div className="w-[335px] flex justify-center items-center custom-clip z-10">
           <Link href="/" passHref>
             <Image

@@ -2,13 +2,24 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
+// const sliderImages = [
+//   "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=800",
+//   "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600&h=800",
+//   "https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&w=600&h=800",
+//   "https://images.pexels.com/photos/3184294/pexels-photo-3184294.jpeg?auto=compress&cs=tinysrgb&w=600&h=800",
+//   "https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg?auto=compress&cs=tinysrgb&w=600&h=800",
+// ];
+
+
 const sliderImages = [
-  "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600&h=800",
-  "https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600&h=800",
-  "https://images.pexels.com/photos/3184293/pexels-photo-3184293.jpeg?auto=compress&cs=tinysrgb&w=600&h=800",
-  "https://images.pexels.com/photos/3184294/pexels-photo-3184294.jpeg?auto=compress&cs=tinysrgb&w=600&h=800",
-  "https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg?auto=compress&cs=tinysrgb&w=600&h=800",
+  "/assets/Thirteen.png",
+  "/assets/Fourteen.png",
+  "/assets/Fifteen.jpg",
+  "/assets/Sixteen.jpg",
+  "/assets/Five.jpg",
 ];
+
+
 
 export const DirectorsSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
