@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { Button } from '../ui/button'
 
 export const NavigationSection = () => {
@@ -24,7 +25,7 @@ export const NavigationSection = () => {
   ]
 
   return (
-    <section className="flex flex-col lg:flex-row items-start gap-8 lg:gap-[154px] w-full py-8 md:py-16 max-w-7xl">
+    <section className="flex flex-col lg:flex-row items-start gap-8 lg:gap-[154px] w-full py-8 md:py-20 max-w-7xl">
       <div className="flex flex-col w-full lg:w-[496px] items-start gap-8 lg:gap-[54px]">
         <h1 className="w-full lg:w-[452px] font-['Playfair_Display',Helvetica] font-medium text-[#243646] text-3xl md:text-4xl lg:text-[56px] tracking-[0] leading-tight lg:leading-[72.8px]">
           Diploma in Hotel Management
@@ -32,7 +33,7 @@ export const NavigationSection = () => {
 
         <div className="flex flex-col items-start justify-between w-full gap-8">
           <div className="flex flex-col items-start gap-9 w-full">
-            <div className="flex flex-col w-full max-w-[217px] items-start gap-6">
+            <div className="flex flex-col w-full max-w-[350px] items-start gap-6">
               {programDetails.map((detail, index) => (
                 <div
                   key={index}
@@ -57,6 +58,7 @@ export const NavigationSection = () => {
             </p>
           </div>
 
+          <Link href="/contact">
           <Button
             variant="ghost"
             className="h-auto inline-flex items-center justify-center gap-2.5 px-0 py-0.5 border-b border-[#243646] rounded-none hover:bg-transparent w-full md:w-auto"
@@ -65,6 +67,7 @@ export const NavigationSection = () => {
               Get free consultation
             </span>
           </Button>
+          </Link>
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 'use client'
 
+import { Link } from 'lucide-react'
 import { Button } from '../ui/button'
 
 export const ProgramDetailsSection = () => {
@@ -62,7 +63,8 @@ export const ProgramDetailsSection = () => {
               quick entry into hotels and cruise lines within just two months.
             </p>
           </div>
-
+         
+         <Link href="/contact">
           <Button
             variant="ghost"
             className="inline-flex items-center justify-center gap-2.5 px-0 py-0.5 h-auto border-b border-[#243646] rounded-none hover:bg-transparent w-full md:w-auto"
@@ -71,6 +73,7 @@ export const ProgramDetailsSection = () => {
               Get free consultation
             </span>
           </Button>
+          </Link>
         </div>
       </div>
     </section>

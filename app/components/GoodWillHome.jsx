@@ -1,4 +1,5 @@
 import { FooterSection } from "../../components/Footer";
+import { EnrollmentInfoSection } from "../programs/components/sections/EnrollmentInfoSection";
 import { CareerOpportunitiesSection } from "./sections/CareerOpportunitiesSection";
 import { ContactSection } from "./sections/ContactSection";
 import { EmpowermentSection } from "./sections/EmpowermentSection";
@@ -21,14 +22,16 @@ export function GoodWillHome() {
     
         
       </div>
-      <div className="w-full">
-        {/* <EmpowermentSection /> */}
-      </div>
-      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-14 ">
+    
+      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 ">
         <ProgramsSection />
       </div>
-      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-14 ">
+      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-20 ">
         <TestimonialsSection />
+      </div>
+        <div className="w-full">
+        {/* <EmpowermentSection /> */}
+        <EnrollmentInfoSection/>
       </div>
       <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-14 ">
         <StudentSuccessSection />

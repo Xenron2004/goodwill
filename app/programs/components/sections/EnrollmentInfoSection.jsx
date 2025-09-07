@@ -67,7 +67,7 @@ export const EnrollmentInfoSection = () => {
               >
                 <AccordionTrigger className="flex items-center justify-between pl-0 pr-2 md:pr-5 py-4 md:py-6 text-left hover:no-underline [&[data-state=open]>svg]:rotate-180">
                   <div className="flex flex-col items-start gap-3">
-                    <h3 className="font-['Helvetica_Neue-Medium',Helvetica] font-medium text-white text-sm md:text-base tracking-[0] leading-[normal]">
+                    <h3 className="font-['Helvetica_Neue-Medium',Helvetica] font-medium text-white text-sm md:text-lg tracking-[0] leading-[normal]">
                       {item.title}
                     </h3>
                   </div>
@@ -75,7 +75,7 @@ export const EnrollmentInfoSection = () => {
                 </AccordionTrigger>
                 {item.content && (
                   <AccordionContent className="pb-4 md:pb-6 pt-0">
-                    <div className="w-full max-w-full md:max-w-[550px] font-['Helvetica_Neue-Medium',Helvetica] font-light text-white text-sm md:text-base tracking-[0] leading-[22.4px]">
+                    <div className="w-full max-w-full md:max-w-[750px] font-['Helvetica_Neue-Medium',Helvetica] font-light text-white text-sm md:text-base tracking-[0] leading-[22.4px]">
                       {item.content}
                     </div>
                   </AccordionContent>

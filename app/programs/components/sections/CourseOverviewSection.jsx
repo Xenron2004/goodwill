@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { Button } from '../ui/button'
 
 export const CourseOverviewSection = () => {
@@ -32,7 +33,7 @@ export const CourseOverviewSection = () => {
 
         <div className="flex flex-col items-start justify-between w-full gap-8">
           <div className="flex flex-col items-start gap-9 w-full">
-            <div className="flex flex-col w-full max-w-[217px] items-start gap-6">
+            <div className="flex flex-col w-full max-w-[300px] items-start gap-6">
               {courseDetails.map((detail, index) => (
                 <div
                   key={index}
@@ -58,6 +59,7 @@ export const CourseOverviewSection = () => {
             </p>
           </div>
 
+          <Link href="/contact">
           <Button
             variant="ghost"
             className="inline-flex items-center justify-center gap-2.5 px-0 py-0.5 h-auto border-b border-solid border-[#243646] rounded-none bg-transparent hover:bg-transparent w-full md:w-auto"
@@ -66,6 +68,7 @@ export const CourseOverviewSection = () => {
               Get free consultation
             </span>
           </Button>
+          </Link>
         </div>
       </div>
 
