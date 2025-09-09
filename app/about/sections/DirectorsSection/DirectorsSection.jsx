@@ -51,7 +51,7 @@ export const DirectorsSection = () => {
               {/* Header with Logo */}
               <div className="absolute top-4 left-4 lg:top-6 lg:left-6 z-10">
                 <div className="bg-white/90 backdrop-blur-sm rounded-lg p-2 lg:p-3">
-                  <div className="flex items-center gap-2 lg:gap-3">
+                  {/* <div className="flex items-center gap-2 lg:gap-3">
                     <div className="w-6 h-6 lg:w-8 lg:h-8 bg-[#e2af44] rounded-full flex items-center justify-center">
                       <img
                         className="w-4 h-4 lg:w-5 lg:h-5 object-cover rounded-full"
@@ -62,7 +62,7 @@ export const DirectorsSection = () => {
                     <span className="text-xs lg:text-sm font-medium text-gray-700">
                       GoodWill Institute
                     </span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

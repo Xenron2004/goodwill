@@ -2,7 +2,7 @@ import React from "react";
 import { Header } from "./components/Header";
 import { HeroSection } from "./sections/HeroSection/HeroSection";
 import { ProgramsSection } from "./sections/ProgramsSection/ProgramsSection";
-import { DirectorsSection } from "./sections/DirectorsSection/DirectorsSection";
+import { DirectorsSection } from "../about/sections/DirectorsSection/DirectorsSection"
 import { FacultySection } from "./sections/FacultySection/FacultySection";
 import { Footer } from "./components/Footer";
 import { FooterSection } from "../../components/Footer";

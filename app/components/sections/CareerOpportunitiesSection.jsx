@@ -8,12 +8,12 @@ export function CareerOpportunitiesSection() {
   const addresses = [
     "​Door No. 47-3-31, Sri Venkateswara Towers, Ground floor, Opp. Subbayya Gari Hotel , Dwarakanagar, Vizag .",
     "D.No. 8-30-9, Old 4S College Building, Opp. RTC Complex Road, Thotapalem, Near Sachivalayam, Vizianagaram",
-    "Office no:506 A-Wing,Kukreja Plaza,Sector -11, CBD Belapur, Navi Mumbai ,Maharashtra",
+    
   ];
 
   const contactInfo = [
     "Email: info@goodwillinstitutes.in, jobs@goodwillinstitutes.in",
-    "Phone: +91 79977 78855",
+    "Phone: +91 95944 65739, +91 97007 77723",
   ];
 
   return (
@@ -71,13 +71,13 @@ export function CareerOpportunitiesSection() {
                 Talk to Us
               </h3>
 
-              <div className="flex flex-col items-start gap-2 relative self-stretch w-full">
+              <div className="flex flex-col items-start gap-2 relative max-w-[500px]  self-stretch w-full">
                 {contactInfo.map((contact, index) => (
                   <div
                     key={`contact-${index}`}
-                    className="inline-flex items-start justify-start gap-2.5 px-0 py-[3px] relative w-full border-b-[0.5px] border-solid border-[#24364699]"
+                    className=" items-start justify-start gap-2.5 px-0 py-[3px] relative w-full  border-b-[0.5px] border-solid border-[#24364699]"
                   >
-                    <div className="relative mt-[-0.50px] font-['Helvetica_Neue-Light',Helvetica] font-light text-[#24364699] text-sm lg:text-base tracking-[0] leading-6 break-all">
+                    <div className="relative mt-[-0.50px] font-['Helvetica_Neue-Light',Helvetica] font-light text-[#24364699] text-sm lg:text-base tracking-[0] leading-6 ">
                       {contact}
                     </div>
                   </div>

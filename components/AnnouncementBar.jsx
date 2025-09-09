@@ -43,7 +43,7 @@ export default function AnnouncementBar() {
   return (
     <div className="w-full bg-[#243646] text-sm lg:text-base py-2 flex justify-center items-center">
       <a
-        href="https://wa.me/919999999999?text=Hi!%20I%20want%20to%20know%20about%20joining%20the%20cruise%20lines%20in%2060%20days."
+        href="https://wa.me/919700777723?text=Hi!%20I%20want%20to%20know%20about%20joining%20the%20cruise%20lines%20in%2060%20days."
         target="_blank"
         rel="noopener noreferrer"
         className="underline text-[17px] font-medium"
