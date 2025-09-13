@@ -8,7 +8,6 @@ export function CareerOpportunitiesSection() {
   const addresses = [
     "​Door No. 47-3-31, Sri Venkateswara Towers, Ground floor, Opp. Subbayya Gari Hotel , Dwarakanagar, Vizag .",
     "D.No. 8-30-9, Old 4S College Building, Opp. RTC Complex Road, Thotapalem, Near Sachivalayam, Vizianagaram",
-    
   ];
 
   const contactInfo = [
@@ -111,7 +110,10 @@ export function CareerOpportunitiesSection() {
         className="w-full lg:w-[542px] h-[400px] lg:h-[723px] overflow-hidden bg-cover bg-center"
         style={{ backgroundImage: "url('/assets/Ten.jpg')" }}
       ></div> */}
-      <div style={{ width: "542px", height: "750px" }}>
+      <div
+        // style={{ width: "542px", height: "750px" }}
+        className="max-w-[542px] w-full  h-[500px] md:h-[700px] "
+      >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7590099.095677327!2d77.92617885000003!3d21.737529358550262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3be5bac24fd121%3A0x652c0501ffb6b2a8!2sGood%20Will%20Institute%20of%20Hospitality%20and%20Hotel%20Management!5e0!3m2!1sen!2sin!4v1757184632298!5m2!1sen!2sin"
           width="100%"

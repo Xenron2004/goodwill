@@ -215,7 +215,7 @@
 //                       ? "slideInLeft 1s ease-out forwards"
 //                       : "none",
 //                   }}
-//                 >                                 
+//                 >
 //                   {link.name}
 
 //                 </Link>
@@ -391,7 +391,7 @@
 //               fill="#00E6AB"
 //             >
 //               <path
-//                 d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 
+//                 d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0
 //                 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"
 //               />
 //             </svg>
@@ -452,94 +452,6 @@
 // };
 
 // export default Navbar;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // "use client";
 // import React, { useState } from "react";
@@ -742,40 +654,6 @@
 
 // export default Navbar;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
@@ -791,6 +669,7 @@ const navItems = [
 ];
 
 const sidebarItems = [
+  { name: "Home", path: "/" },
   { name: "Programs", path: "/programs" },
   { name: "About", path: "/about" },
   { name: "Training & Placements", path: "/training" },
@@ -856,7 +735,12 @@ const Navbar = () => {
       <main className="md:hidden w-full bg-white flex justify-between items-center shadow-sm px-4 py-3">
         <Link href="/">
           {/* <Image src="/assets/goodwillLogo.svg" alt="Logo" width={40} height={20} /> */}
-          <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToHM2UNbpvAWqNTFK3vWZrAJoprrWoqB5h7g&s" alt="Logo" width={40} height={20} />
+          <Image
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToHM2UNbpvAWqNTFK3vWZrAJoprrWoqB5h7g&s"
+            alt="Logo"
+            width={40}
+            height={20}
+          />
         </Link>
         <button
           onClick={toggleDropdown}
@@ -943,7 +827,10 @@ const Navbar = () => {
         }`}
       >
         <div className="flex justify-end mb-4">
-          <button onClick={() => setMobileMenuOpen(false)} className="text-[#06082E]">
+          <button
+            onClick={() => setMobileMenuOpen(false)}
+            className="text-[#06082E]"
+          >
             <X size={24} />
           </button>
         </div>

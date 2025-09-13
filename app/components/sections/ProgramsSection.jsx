@@ -65,16 +65,6 @@
 //   );
 // }
 
-
-
-
-
-
-
-
-
-
-
 "use client";
 import { Card, CardContent } from "../../../components/ui/card";
 import { Separator } from "../../../components/ui/separator";
@@ -150,14 +140,25 @@ export function ProgramsSection() {
       className="flex flex-col w-full items-center gap-8 lg:gap-14 relative"
     >
       <header className="flex flex-col w-full max-w-[640px] items-center gap-5 relative text-center">
-        <h2 className="relative self-stretch font-['Playfair_Display',Helvetica] font-medium text-[#243646] text-3xl lg:text-5xl text-center leading-normal">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.2, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="relative self-stretch font-['Playfair_Display',Helvetica] font-medium text-[#243646] text-3xl lg:text-5xl text-center leading-normal"
+        >
           Our Students Achieve Global Salary Standards
-        </h2>
+        </motion.h2>
 
-        <p className="relative self-stretch font-['Helvetica-Regular',Helvetica] font-normal text-[#243646b3] text-sm lg:text-base text-center leading-relaxed lg:leading-[20.8px]">
+        <motion.p 
+         initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.6 }}
+              viewport={{ once: true }}
+        className="relative self-stretch font-['Helvetica-Regular',Helvetica] font-normal text-[#243646b3] text-sm lg:text-base text-center leading-relaxed lg:leading-[20.8px]">
           Real success, real numbers — from first job offers to thriving
           international careers.
-        </p>
+        </motion.p>
       </header>
 
       <Card className="w-full border-0 shadow-none bg-transparent">

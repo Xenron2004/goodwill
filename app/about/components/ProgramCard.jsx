@@ -1,7 +1,9 @@
 "use client";
-
+import Link from "next/link"
 export const ProgramCard = ({ title, description, image, className = "" }) => {
   return (
+
+    <Link href="/programs">
     <div
       tabIndex={0}
       className={`group relative w-full h-48 sm:h-64 lg:h-80 xl:h-96 overflow-hidden cursor-pointer transition-all duration-500 shadow-lg hover:shadow-xl ${className}`}
@@ -30,5 +32,6 @@ export const ProgramCard = ({ title, description, image, className = "" }) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };

@@ -22,7 +22,6 @@ import OurPartners from "./components/OurPartners";
         <FacultySection />
       </main>
       
-     
     </div>
   );
 

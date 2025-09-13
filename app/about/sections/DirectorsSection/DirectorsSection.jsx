@@ -10,7 +10,6 @@ import { motion } from "framer-motion";
 //   "https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg?auto=compress&cs=tinysrgb&w=600&h=800",
 // ];
 
-
 const sliderImages = [
   "/assets/Thirteen.png",
   "/assets/Fourteen.png",
@@ -18,8 +17,6 @@ const sliderImages = [
   "/assets/Sixteen.jpg",
   "/assets/Five.jpg",
 ];
-
-
 
 export const DirectorsSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -47,24 +44,10 @@ export const DirectorsSection = () => {
         <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
           {/* Left Side - Image Slider */}
           <div className="w-full lg:w-1/2 relative">
-            <div className="relative w-full h-64 sm:h-80 lg:h-[400px] xl:h-[500px] rounded-lg overflow-hidden shadow-lg">
+           
+           
+            <div className="relative w-full h-64 sm:h-80 lg:h-[400px] xl:h-[500px] overflow-hidden shadow-lg">
               {/* Header with Logo */}
-              <div className="absolute top-4 left-4 lg:top-6 lg:left-6 z-10">
-                <div className="bg-white/90 backdrop-blur-sm rounded-lg p-2 lg:p-3">
-                  {/* <div className="flex items-center gap-2 lg:gap-3">
-                    <div className="w-6 h-6 lg:w-8 lg:h-8 bg-[#e2af44] rounded-full flex items-center justify-center">
-                      <img
-                        className="w-4 h-4 lg:w-5 lg:h-5 object-cover rounded-full"
-                        alt="Goodwill Logo"
-                        src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=32&h=32&fit=crop"
-                      />
-                    </div>
-                    <span className="text-xs lg:text-sm font-medium text-gray-700">
-                      GoodWill Institute
-                    </span>
-                  </div> */}
-                </div>
-              </div>
 
               {/* Progress Bars */}
               <div className="absolute top-4 right-4 lg:top-6 lg:right-6 z-10 flex flex-col gap-1">
@@ -113,7 +96,7 @@ export const DirectorsSection = () => {
               <motion.h2
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: 0.6 }}
+                transition={{ duration: 0.4, delay: 0.4 }}
                 viewport={{ once: true }}
                 className="font-['Playfair_Display',Helvetica] font-normal text-black text-xl sm:text-2xl lg:text-3xl xl:text-4xl leading-tight"
               >
@@ -124,7 +107,7 @@ export const DirectorsSection = () => {
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: 0.8 }}
+                  transition={{ duration: 0.6, delay: 0.5 }}
                   viewport={{ once: true }}
                   className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base leading-relaxed"
                 >
@@ -132,41 +115,65 @@ export const DirectorsSection = () => {
                   career and a better future.
                 </motion.p>
 
-                <p className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base tracking-wide leading-relaxed">
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.6 }}
+                  viewport={{ once: true }}
+                  className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base tracking-wide leading-relaxed"
+                >
                   With over a decade of experience in teaching and recruitment,
                   Good Will Institute is dedicated to nurturing young, talented
                   individuals—from bustling cities to rural villages—by
                   connecting them to the best career opportunities across the
                   globe.
-                </p>
+                </motion.p>
 
-                <p className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base leading-relaxed">
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.7 }}
+                  viewport={{ once: true }}
+                  className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#666d80] text-sm lg:text-base leading-relaxed"
+                >
                   Our mission is to not only build your skills but also to bring
                   pride and happiness to your families. Join hands with Good
                   Will and let's turn your dreams into reality.
-                </p>
+                </motion.p>
               </div>
             </div>
 
             {/* Directors */}
             <div className="flex flex-col sm:flex-row gap-6 lg:gap-10 pt-4">
-              <div className="flex flex-col gap-1">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.8 }}
+                viewport={{ once: true }}
+                className="flex flex-col gap-1"
+              >
                 <h4 className="font-medium font-['Helvetica_Neue-Regular',Helvetica]  text-[#243646] text-base lg:text-lg">
                   Vijay Kumar
                 </h4>
                 <p className="font-light font-['Helvetica_Neue-Regular',Helvetica] text-[#243646]/70 text-sm lg:text-base">
                   Director
                 </p>
-              </div>
+              </motion.div>
 
-              <div className="flex flex-col gap-1">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.9 }}
+                viewport={{ once: true }}
+                className="flex flex-col gap-1"
+              >
                 <h4 className="font-medium font-['Helvetica_Neue-Regular',Helvetica] text-[#243646] text-base lg:text-lg">
                   Vidya Sagar
                 </h4>
                 <p className="font-normal font-['Helvetica_Neue-Regular',Helvetica] text-[#243646]/70 text-sm lg:text-base">
                   Director
                 </p>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+
 // Hardcoded clients array
 const clients = [
   {
@@ -157,31 +158,31 @@ const clients = [
     name: "Client 5",
   },
 
-   {
+  {
     image:
       "https://meetingspanama.com/wp-content/uploads/MicrosoftTeams-image-3.jpg",
     link: "https://client5.com",
     name: "Client 5",
   },
-   {
+  {
     image:
       "https://stories.hilton.com/uploads/2022/04/DoubleTree-Logo-Color_HR-1.png",
     link: "https://client5.com",
     name: "Client 5",
   },
-   {
+  {
     image:
       "https://corporate.wyndhamhotels.com/wp-content/uploads/2019/11/WYNDHAM_HR_PMS-285-C@144-e1587994944441.png",
     link: "https://client5.com",
     name: "Client 5",
   },
-   {
+  {
     image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8hskz9g4te12dXm3v1_11HahnKUpk3UMaIA&s",
     link: "https://client5.com",
     name: "Client 5",
   },
-   {
+  {
     image:
       "https://mir-s3-cdn-cf.behance.net/project_modules/1400/9b2e139767947.560dc34190213.jpg",
     link: "https://client5.com",
@@ -207,7 +208,8 @@ const ClientSlider = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.6 }}
               viewport={{ once: true }}
-            className="font-['Playfair_Display',Helvetica] text-center font-medium text-[#243646] text-2xl lg:text-3xl xl:text-4xl leading-tight">
+              className="font-['Playfair_Display',Helvetica] text-center font-medium text-[#243646] text-2xl lg:text-3xl xl:text-4xl leading-tight"
+            >
               100+ Training Partners Worldwide
             </motion.div>
           </div>
@@ -232,7 +234,6 @@ const ClientSlider = () => {
                   alt={client.name}
                   fill
                   className=" object-contain"
-                
                 />
               </Link>
             </div>
@@ -250,11 +251,13 @@ const ClientSlider = () => {
           }
         }
         .animate-scroll-left {
-          animation: scroll-left 35s linear infinite;
+          animation: scroll-left 50s linear infinite;
         }
       `}</style>
     </section>
+  
   );
 };
+
 
 export default ClientSlider;
