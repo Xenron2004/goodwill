@@ -1,6 +1,6 @@
 'use client'
 
-import { Link } from 'lucide-react'
+import Link from 'next/link'
 import { Button } from '../ui/button'
 
 export const ProgramDetailsSection = () => {
@@ -28,7 +28,7 @@ export const ProgramDetailsSection = () => {
       <div 
         className="flex-shrink-0 w-full lg:w-[542px] h-[400px] md:h-[600px] lg:h-[813px] bg-cover bg-center bg-no-repeat order-2 lg:order-1" 
         style={{ 
-          backgroundImage: "url('/assets/Fourteen.png')" 
+          backgroundImage: "url('/assets/TwentyOne.jpg')" 
         }} 
       />
 

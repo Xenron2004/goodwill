@@ -863,39 +863,6 @@ body{
 .h-px{
   height: 1px;
 }
-.h-\[\]{
-  height: ;
-}
-.h-\[7\]{
-  height: 7;
-}
-.h-\[700\]{
-  height: 700;
-}
-.h-\[700px\]{
-  height: 700px;
-}
-.h-\[00px\]{
-  height: 00px;
-}
-.max-h-\[\]{
-  max-height: ;
-}
-.max-h-\[7\]{
-  max-height: 7;
-}
-.max-h-\[75\]{
-  max-height: 75;
-}
-.max-h-\[750px\]{
-  max-height: 750px;
-}
-.max-h-\[750\]{
-  max-height: 750;
-}
-.max-h-\[750p\]{
-  max-height: 750p;
-}
 .min-h-\[120vh\]{
   min-height: 120vh;
 }
@@ -1042,6 +1009,9 @@ body{
 .max-w-\[500px\]{
   max-width: 500px;
 }
+.max-w-\[542px\]{
+  max-width: 542px;
+}
 .max-w-\[629px\]{
   max-width: 629px;
 }
@@ -1068,51 +1038,6 @@ body{
 }
 .max-w-xl{
   max-width: 36rem;
-}
-.max-w-\[\]{
-  max-width: ;
-}
-.max-w-\[5\]{
-  max-width: 5;
-}
-.max-w-\[540\]{
-  max-width: 540;
-}
-.max-w-\[540px\]{
-  max-width: 540px;
-}
-.max-w-\[7\]{
-  max-width: 7;
-}
-.max-w-\[75\]{
-  max-width: 75;
-}
-.max-w-\[750\]{
-  max-width: 750;
-}
-.max-w-\[750p\]{
-  max-width: 750p;
-}
-.max-w-\[750px\]{
-  max-width: 750px;
-}
-.max-w-\[4\]{
-  max-width: 4;
-}
-.max-w-\[54\]{
-  max-width: 54;
-}
-.max-w-\[542\]{
-  max-width: 542;
-}
-.max-w-\[542ox\]{
-  max-width: 542ox;
-}
-.max-w-\[542o\]{
-  max-width: 542o;
-}
-.max-w-\[542px\]{
-  max-width: 542px;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -1386,10 +1311,6 @@ body{
 .rounded-r-lg{
   border-top-right-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
-}
-.rounded-l{
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
 }
 .border{
   border-width: 1px;
@@ -1768,9 +1689,6 @@ body{
 }
 .pt-\[25px\]{
   padding-top: 25px;
-}
-.pb-\[75\%\]{
-  padding-bottom: 75%;
 }
 .text-left{
   text-align: left;
@@ -2825,32 +2743,8 @@ body{
     height: 600px;
   }
 
-  .md\:h-\[\]{
-    height: ;
-  }
-
-  .md\:h-\[7\]{
-    height: 7;
-  }
-
-  .md\:h-\[720\]{
-    height: 720;
-  }
-
-  .md\:h-\[720px\]{
-    height: 720px;
-  }
-
-  .md\:h-\[70px\]{
-    height: 70px;
-  }
-
   .md\:h-\[700px\]{
     height: 700px;
-  }
-
-  .md\:max-h-\[750px\]{
-    max-height: 750px;
   }
 
   .md\:w-1\/3{
@@ -2907,10 +2801,6 @@ body{
 
   .md\:max-w-\[801px\]{
     max-width: 801px;
-  }
-
-  .md\:max-w-\[540px\]{
-    max-width: 540px;
   }
 
   .md\:grid-cols-2{

@@ -75,7 +75,7 @@ export const CourseOverviewSection = () => {
       <div
         className="w-full lg:w-[542px] h-[400px] md:h-[600px] lg:h-[813px] bg-cover bg-center bg-no-repeat"
         style={{ 
-          backgroundImage: "url('/assets/Ten.jpg')" 
+          backgroundImage: "url('/assets/TwentyFour.jpg')" 
         }}
       />
     </section>

@@ -74,7 +74,7 @@ export const NavigationSection = () => {
       <div 
         className="w-full lg:w-[542px] h-[400px] md:h-[600px] lg:h-[813px] bg-cover bg-center bg-no-repeat" 
         style={{ 
-          backgroundImage: "url('/assets/Two.jpg')" 
+          backgroundImage: "url('/assets/TwentyThree.jpg')" 
         }} 
       />
     </section>
