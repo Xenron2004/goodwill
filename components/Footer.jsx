@@ -178,7 +178,7 @@ export function FooterSection() {
           width={120}
         />
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 pt-[25px] pb-8 px-0 relative self-stretch w-full border-t border-solid border-[#f4f4f4]">
-          <div className="inline-flex flex-col items-start relative">
+          <div className="inline-flex flex-row items-start gap-5 relative">
             {/* <div className="inline-flex flex-wrap items-start gap-4 relative">
                
 
@@ -199,11 +199,19 @@ export function FooterSection() {
               href="https://www.linkedin.com/company/digimarksolutionsbiz"
               rel="noopener noreferrer"
               target="_blank"
-              className="relative w-fit mt-[-1.00px] font-['Helvetica_Neue-Light',Helvetica] font-light text-white cursor-pointer text-sm lg:text-base tracking-[0.16px] leading-5 whitespace-nowrap"
+              className="relative w-fit font-['Helvetica_Neue-Light',Helvetica] font-light text-white cursor-pointer text-sm lg:text-base tracking-[0.16px] leading-5 whitespace-nowrap"
             >
               Powered by{" "}
               <span className="underline"> Digimark Solutions. </span>{" "}
             </Link>
+              <a
+              href="/assets/Goodwill_Offshore_Services_Privacy_Policy.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative w-fit font-['Helvetica_Neue-Light',Helvetica] font-light text-white cursor-pointer text-sm lg:text-base tracking-[0.16px] leading-5 hover:text-[#E3AF45] transition-colors"
+            >
+              Privacy Policy
+            </a>
           </div>
 
           <div className="w-fit font-www-glion-edu-helvetica-neue-light font-[number:var(--www-glion-edu-helvetica-neue-light-font-weight)] [var(--www-glion-edu-helvetica-neue-light-letter-spacing)] leading-[var(--www-glion-edu-helvetica-neue-light-line-height)] relative text-[length:var(--www-glion-edu-helvetica-neue-light-font-size)] text-center lg:text-left [font-style:var(--www-glion-edu-helvetica-neue-light-font-style)] text-white">
